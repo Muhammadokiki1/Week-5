@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--bgcolor:rgb(250, 246, 246);
+--border:2px solid red;
+--primarybg:rgb(63, 26, 98);
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+/* ====This is the styling for the Navigation Bar==== */
+nav img {
+    width: 8vw;
+}
+.nav-start{
+    display: flex;
+}
+nav {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: grey;
+
+}
+.login-btn a{
+    display: inline-block;
+}
+.nav-btns :hover{
+    color: black;
+}
+.login-btn a:hover{
+    background-color: aqua;
+    color: white;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    
+}
+
+/* ====This is the styling for the header ====*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:50px ;
+}
+.header-details p  {
+    color: grey;
+}
+
+header img {
+    width: 30vw;
+    padding: 0;
+    height: auto;
+}
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+/* ===This is the styling for the main=== */
+main{
+      background-color: var(--bgcolor); 
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.shorten-it{
+    background-color:var(--primarybg);
+    width: 90vw;
+    height: 12vh;  
+    margin: 100px auto 0px auto; 
+   border-radius: 10px;
+   background-image: url(./assets/images/bg-shorten-desktop.svg);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 3%;
+   position: relative;
+   top: -70px;
+}
+
+
+
+.shorten-it input{
+    border: 2px solid red;
+    border-radius:5px ;
+    height: 3.5vh;
+    width: 75vw;
+    
+}
+.shorten-it button {
+    background-color: aquamarine;
+    border-radius: 5px;
+    width: 10%;
+    height: 4vh;
+}
+.link-short {
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    height: 6vh;  
+    margin: 20px auto; 
+   border-radius: 8px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.link-short p, .link-short div {
+    margin: auto 30px;
+}
+.link-short a {
+    color: aquamarine;
+    font-weight: bold;
+}
+.link-short button {
+    padding: 8px 15px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color: white;
+    margin-left: 5px;
+    border: none;
+}
+.link-short button:hover {
+    cursor: pointer;
+}
+.copied button {
+    background-color: rgb(63, 26, 98);
+}
+/* ============ASIDE============ */
+aside {
+    background-color: var(--bgcolor);
+    padding: 60px 0;
+}
+.aside-heading h3 {
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.aside-logos {
+    border: none;
+    border-radius: 50px;
+    background-color:rgb(63, 26, 98);
+    height: 70px;
+    width: 70px;
+    padding-top: 5%;
+    position: absolute;
+    top: -15%;
+
+    bottom: -50%;
+    
+}
+.aside-logos img{
+    text-align: center;
+}
+
+aside h4 {
+    text-align: start;
+}
+aside p {
+    text-align: start;
+}
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px auto;
+    position: relative;
+}
+.stats  .container:nth-child(1){
+    position: relative;
+    z-index: 2;
+}
+.stats  .container:nth-child(2){
+    position: relative;
+    top: 40px;
+    z-index: 2;
+}
+.stats  .container:nth-child(3){
+    position: relative;
+    top: 80px;
+    z-index: 2;
+}
+
+.stats .container {
+    background-color: white;
+    position: relative;
+    padding: 30px ;
+    height: 200px;
+    width: 300px;    
+    border-radius:7px;
+}
+
+.stats .container h4 {
+    margin: 10px 0;
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 1.2rem;
+   
+}
+.stats::after{
+    content: "";
+    height: 10px;
+    width: 950px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 60%;
+    left: 60px;
+    
+}
+
+/* TOP-FOOTER STYLING starts here */
+.top-footer {
+    background-color: var(--primarybg);
+    padding: 20px 0;
+    background-image: url(./assets/images/bg-boost-desktop.svg);
+    background-size: cover;
+    background-position: center;
+}
+.top-footer h3 {
+    font-size: 2rem;
+    color: white;
+}
+footer {
+    background-color: rgb(53, 49, 49);
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+footer img {
+    height: 40px;
+}
+
+footer h5 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+footer p {
+    color: rgb(245, 241, 241);
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 5px 0;
+}
+footer p:hover, footer i:hover {
+    color: aquamarine;
+    cursor: pointer;
+}
+footer i {
+    color: white;
+    margin: 0 5px;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:800px) {
+    header {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        text-align: center;
+    } 
+    header img {
+        align-self: center;
+        width: 50vw;
+    }   
+    .link-short {
+        display: none;
+    }
+    .shorten-it {
+        height: 15vh;
+        background-image: url(./assets/images/bg-shorten-mobile.svg);
+        background-position: center;
+        background-size: cover;
+    }
+    .shorten-it button {
+        width:75vw ;
+        font-size: 1.5rem;
+       height: 40px;
+    }
+    .shorten-it input{
+        border: none;
+        margin-top: 5%;        
+    }
+    .shorten-it, .stats, footer {
+        flex-direction: column;
+        align-items: center;        
+    }
+    footer,  .stats.container p,  .stats.container h4 {
+        text-align: center;
+    }
+    footer div {
+        margin-bottom: 20px;
+    }
+    
+    .stats .container {
+        margin-bottom: 50px;          
+    }    
+    .top-footer {
+        background-image: url(./assets/images/bg-boost-mobile.svg);
+        background-position: center;
+        background-size: cover;
+    }
+    .btn{
+        height: 50px;
+        width: 150px;
+        border: 30px;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .aside-logos{
+        margin: 0 25%;
+    }
+    .stats::after{
+        content: "";
+        height: 700px;
+        width: 10px;
+        background-color: aquamarine;
+        position: absolute;
+        top:5px;
+        left: 47.5%;
+    }
+}
+
+
+@media screen and (max-width:550px){
+    .nav-btns, .login-btn {
+        display: none;
+    }
+
+    nav::after{
+        content: url(./assets/images/icon-hamburger.svg);
+    }
+
+}
